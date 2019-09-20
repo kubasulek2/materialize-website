@@ -49,12 +49,50 @@
 
 	<!-- Login Modal -->
 	<div id="login-modal" class="modal">
+		
 		<div class="modal-content">
-			<h4>Modal Header</h4>
-			<p>A bunch of text</p>
-		</div>
-		<div class="modal-footer">
-			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+			<div class="row logo">
+				<h4 class="center"><span><i class="material-icons left">cloud_done</i> <b>CloudCom</b></span></h4>
+			</div>
+			<form class="login-form">
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">mail_outline</i>
+						<input class="validate" id="email" type="email">
+						<label for="email" data-error="wrong" data-success="right">Email</label>
+						<span class="helper-text" data-error="Provide valid email address"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">lock_outline</i>
+						<input class="validate" minlength="6" id="password" type="password">
+						<label for="password">Password</label>
+						<span class="helper-text" data-error="password needs at least 6 characters" ></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<p>
+							<label>
+								<input type="checkbox" class="filled-in" checked="checked" />
+								<span>Remember Me</span>
+							</label>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<a href="#!" class="btn waves-effect waves-light col s12">Login</a>
+					</div>
+					<div class="input-field col s6 m6 l6">
+						<div><a href="signup.html">Register Now!</a></div>
+					</div>
+					<div class="input-field col s6 m6 l6">
+						<div class="right-align"><a href="#">Forgot password?</a></div>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 	<!-- Floating Action Button -->

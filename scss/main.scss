@@ -18,6 +18,9 @@ body {
 	background: $secondary-color;
 	color: $light-grey;
 }
+a{
+	color: $primary-color
+}
 
 
 /* ========================= HEADER ======================== */
@@ -64,9 +67,6 @@ nav {
 		}
 	}
 }
-body.keyboard{
-	
-}
 
 /* Side-nav */
 .sidenav {
@@ -78,4 +78,22 @@ body.keyboard{
 
 .fixed-action-btn .btn-large{
 	background: $accent
+}
+
+/* ==================== LOGIN MODAL ========================== */
+
+#login-modal{
+	max-width: 500px;
+	min-width: 350px;
+	.logo{
+		color: $primary-color;
+		display: flex;
+		justify-content: center;
+	}
+
+	.logo .material-icons{
+		font-size: 42px;
+		line-height: 28px;
+		height: 42px;
+	}
 }
