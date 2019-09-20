@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
 		integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/waypoints.css">
 	<title>Document</title>
 </head>
 
@@ -16,6 +18,7 @@
 	<!-- Header -->
 	<header class="main-header">
 		<div class="overlay overlay-light">
+			<!-- Navbar -->
 			<div class="navbar-fixed">
 				<div class="nav-wrapper">
 					<nav class="z-depth-0 ">
@@ -35,6 +38,21 @@
 					</nav>
 				</div>
 
+			</div>
+			<!-- ShowCase -->
+			<div class="showcase container">
+					<div class="col s12 left-align">
+						<div class="os-animation" data-animation='fadeIn' data-delay=".5s">
+							<h1 class="bold main-title">CloudCom</h1>
+						</div>
+						<div class="os-animation" data-animation='fadeIn' data-delay=".8s">
+							<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, unde?</h4>
+						</div>
+						<div class="os-animation" data-animation='zoomIn' data-delay="1s">
+							<a href="#!about" class="btn-large waves-effect waves-light">Read More</a>
+						</div>
+
+					</div>
 			</div>
 		</div>
 	</header>
@@ -101,16 +119,18 @@
 			<i class="fas fa-share-alt"></i>
 		</a>
 		<ul>
-			<li><a target="_blank" href="www.facebook.com" class="btn-floating blue darken-4 waves-effect waves-light"><i class="fab fa-facebook-square"></i></a></li>
+			<li><a target="_blank" href="https://facebook.com" class="btn-floating blue darken-4 waves-effect waves-light"><i class="fab fa-facebook-square"></i></a></li>
 			<li><a target="_blank" href="https://aboutme.google.com/u/0/?referer=gplus" class="btn-floating red lighten-1 waves-effect waves-light"><i class="fab fa-google-plus-g"></i></a></li>
-			<li><a target="_blank" href="www.twitter.com" class="btn-floating light-blue darken-2 waves-effect waves-light"><i class="fab fa-twitter"></i></a></li>
-			<li><a target="_blank" href="www.github.com" class="btn-floating green lighten-2 waves-effect waves-light"><i class="fab fa-github"></i></a></li>
+			<li><a target="_blank" href="https://twitter.com" class="btn-floating light-blue darken-2 waves-effect waves-light"><i class="fab fa-twitter"></i></a></li>
+			<li><a target="_blank" href="https://github.com" class="btn-floating green lighten-2 waves-effect waves-light"><i class="fab fa-github"></i></a></li>
 		</ul>
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/materialize.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/waypoints.js"></script>
 	<script src="js/index.js"></script>
 </body>
 

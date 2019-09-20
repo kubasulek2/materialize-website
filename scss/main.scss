@@ -2,8 +2,9 @@
 
 /* ========================= VARIABLES ======================== */
 
-$light-grey: color("grey", "lighten-4");
-$grey-text: color("grey", "darken-3");
+$light-text: color("grey", "lighten-4");
+$grey-text-light: lighten(color("grey", "darken-2"), 5%);
+$grey-text-dark: darken(color("grey", "darken-2"), 5%);
 $accent: color("materialize-red", "lighten-1");
 
 /* ========================= GENERAL ======================== */
@@ -11,17 +12,16 @@ $accent: color("materialize-red", "lighten-1");
 body {
 	font-family: 'Open Sans', sans-serif;
 }
-.bold{
+.bold {
 	font-weight: 700;
 }
 .btn-flat {
 	background: $secondary-color;
-	color: $light-grey;
+	color: $light-text;
 }
-a{
-	color: $primary-color
+a {
+	color: $primary-color;
 }
-
 
 /* ========================= HEADER ======================== */
 
@@ -52,8 +52,8 @@ nav {
 		font-size: 56px;
 	}
 
-	.btn-flat:active, 
-	.btn-flat:hover{
+	.btn-flat:active,
+	.btn-flat:hover {
 		background: lighten($secondary-color, 15%);
 	}
 
@@ -71,27 +71,42 @@ nav {
 /* Side-nav */
 .sidenav {
 	background: $primary-color-light;
-	color: $grey-text;
+	color: $grey-text-light;
 }
 
+/* ShowCase */
+.showcase {
+	.main-title {
+		font-size: 6rem;
+		margin-top: 20%;
+		letter-spacing: .2rem;
+		color: $grey-text-dark;
+	}
+	h4{
+		color: $grey-text-light;
+	}
+	.btn-large{
+		margin: 2rem;
+	}
+}
 /* ==================== FIXED ACTION BUTTON ========================== */
 
-.fixed-action-btn .btn-large{
-	background: $accent
+.fixed-action-btn .btn-large {
+	background: $accent;
 }
 
 /* ==================== LOGIN MODAL ========================== */
 
-#login-modal{
+#login-modal {
 	max-width: 500px;
 	min-width: 350px;
-	.logo{
+	.logo {
 		color: $primary-color;
 		display: flex;
 		justify-content: center;
 	}
 
-	.logo .material-icons{
+	.logo .material-icons {
 		font-size: 42px;
 		line-height: 28px;
 		height: 42px;

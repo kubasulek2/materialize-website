@@ -6574,7 +6574,20 @@ nav {
 /* Side-nav */
 .sidenav {
   background: #cfe1ff;
-  color: #424242; }
+  color: #6e6e6e; }
+
+/* ShowCase */
+.showcase .main-title {
+  font-size: 6rem;
+  margin-top: 20%;
+  letter-spacing: .2rem;
+  color: #545454; }
+
+.showcase h4 {
+  color: #6e6e6e; }
+
+.showcase .btn-large {
+  margin: 2rem; }
 
 /* ==================== FIXED ACTION BUTTON ========================== */
 .fixed-action-btn .btn-large {
