@@ -11,10 +11,14 @@ $accent: color("materialize-red", "lighten-1");
 body {
 	font-family: 'Open Sans', sans-serif;
 }
-	.btn-flat{
-		background: $secondary-color;
-		color: $light-grey;
-	}
+.bold{
+	font-weight: 700;
+}
+.btn-flat {
+	background: $secondary-color;
+	color: $light-grey;
+}
+
 
 /* ========================= HEADER ======================== */
 
@@ -25,7 +29,7 @@ body {
 	position: relative;
 	background: url('../img/tech-mobile.jpg') center/cover;
 
-	@media (min-width:1000px){
+	@media (min-width: 1000px) {
 		background-image: url('../img/tech.jpg');
 	}
 
@@ -45,6 +49,11 @@ nav {
 		font-size: 56px;
 	}
 
+	.btn-flat:active, 
+	.btn-flat:hover{
+		background: lighten($secondary-color, 15%);
+	}
+
 	// smallest devices
 	@media (max-width: 500px) {
 		.brand-logo {
@@ -55,9 +64,18 @@ nav {
 		}
 	}
 }
+body.keyboard{
+	
+}
 
 /* Side-nav */
-.sidenav{
+.sidenav {
 	background: $primary-color-light;
 	color: $grey-text;
+}
+
+/* ==================== FIXED ACTION BUTTON ========================== */
+
+.fixed-action-btn .btn-large{
+	background: $accent
 }
