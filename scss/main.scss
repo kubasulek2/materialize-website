@@ -3,12 +3,18 @@
 /* ========================= VARIABLES ======================== */
 
 $light-grey: color("grey", "lighten-4");
+$grey-text: color("grey", "darken-3");
+$accent: color("materialize-red", "lighten-1");
 
 /* ========================= GENERAL ======================== */
 
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+	.btn-flat{
+		background: $secondary-color;
+		color: $light-grey;
+	}
 
 /* ========================= HEADER ======================== */
 
@@ -35,7 +41,6 @@ body {
 
 nav {
 	padding: 0 1.5rem;
-
 	.brand-logo .material-icons {
 		font-size: 56px;
 	}
@@ -49,4 +54,10 @@ nav {
 			font-size: 24px;
 		}
 	}
+}
+
+/* Side-nav */
+.sidenav{
+	background: $primary-color-light;
+	color: $grey-text;
 }
