@@ -14,60 +14,88 @@
 	<title>Document</title>
 </head>
 
-<body id="home">
+<body>
 	<!-- Header -->
-	<header class="main-header">
+	<header class="main-header scrollspy" id="home">
 		<div class="overlay overlay-light">
 			<!-- Navbar -->
 			<div class="navbar-fixed">
 				<div class="nav-wrapper">
 					<nav class="z-depth-0 ">
-						<a href="#!" class="brand-logo"><i class="material-icons left">cloud_done</i> <b>CloudCom</b></a>
+						<a href="#!" class="brand-logo"><i class="material-icons left">cloud_done</i>
+							<b>CloudCom</b></a>
 						<a href="#!" data-target="mobile-nav" class="sidenav-trigger">
 							<i class="material-icons">menu</i>
 						</a>
-						<ul class="right hide-on-med-and-down">
-							<li class="active"><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#solutions">Solutions</a></li>
-							<li><a href="#clients">Clients</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="signup.html" class="bold">Sign up <i class="material-icons left">person_add</i></a></li>
-							<li><a href="#login-modal" class="btn-flat waves-effect waves-light modal-trigger">Login <i class="material-icons right">person</i></a></li>
-						</ul>
+						<div>
+							<ul class="right hide-on-med-and-down">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#solutions">Solutions</a></li>
+								<li><a href="#clients">Clients</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="signup.html" class="bold">Sign up <i
+											class="material-icons left">person_add</i></a></li>
+								<li><a href="#login-modal" class="btn-flat waves-effect waves-light modal-trigger">Login
+										<i class="material-icons right">person</i></a></li>
+							</ul>
+						</div>
 					</nav>
 				</div>
 
 			</div>
 			<!-- ShowCase -->
 			<div class="showcase container">
-					<div class="col s12 left-align">
-						<div class="os-animation" data-animation='fadeIn' data-delay=".5s">
-							<h1 class="bold main-title">CloudCom</h1>
-						</div>
-						<div class="os-animation" data-animation='fadeIn' data-delay=".8s">
-							<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, unde?</h4>
-						</div>
-						<div class="os-animation" data-animation='zoomIn' data-delay="1s">
-							<a href="#!about" class="btn-large waves-effect waves-light">Read More</a>
-						</div>
-
+				<div class="col s12 left-align">
+					<div class="os-animation" data-animation='fadeIn' data-delay=".5s">
+						<h1 class="bold main-title">CloudCom</h1>
 					</div>
+					<div class="os-animation" data-animation='fadeIn' data-delay=".8s">
+						<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, unde?</h4>
+					</div>
+					<div class="os-animation" data-animation='fadeInUp' data-delay="1s">
+						<a href="#about" class="btn btn-xlarge waves-effect waves-light">Get Started</a>
+					</div>
+
+				</div>
 			</div>
 		</div>
+		<!-- Sidenav -->
+		<ul class="sidenav" id="mobile-nav">
+			<li>
+				<div class="sidenav-header blue accent-1">
+					<div class="logo center">
+						<span><a href="index.html"><i class="material-icons left">cloud_done</i>CloudCom</a></span>
+					</div>
+				</div>
+			</li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#solutions">Solutions</a></li>
+			<li><a href="#clients">Clients</a></li>
+			<li><a href="#">Contact</a></li>
+			<li>
+				<div class="divider"></div>
+			</li>
+			<li><a class="subheader">Admin Panel</a></li>
+			<li><a href="signup.html">Sign Up<i class="material-icons left">person_add</i></a></li>
+			<li>
+				<div class="login-container">
+					<a href="#login-modal" class="btn-flat waves-effect waves-light modal-trigger white-text">Login
+						<i class="material-icons right white-text">person</i></a>
+				</div>
+			</li>
+
+		</ul>
 	</header>
-	<!-- Sidenav -->
-	<ul class="sidenav" id="mobile-nav">
-		<li><a href="sass.html">Sass</a></li>
-		<li><a href="badges.html">Components</a></li>
-		<li><a href="collapsible.html">Javascript</a></li>
-		<li><a href="mobile.html">Mobile</a></li>
-	</ul>
+	<section id="about" class="scrollspy"></section>
+	<section id="solutions" class="scrollspy"></section>
+
 
 
 	<!-- Login Modal -->
 	<div id="login-modal" class="modal">
-		
+
 		<div class="modal-content">
 			<div class="row logo">
 				<h4 class="center"><span><i class="material-icons left">cloud_done</i> <b>CloudCom</b></span></h4>
@@ -86,7 +114,7 @@
 						<i class="material-icons prefix">lock_outline</i>
 						<input class="validate" minlength="6" id="password" type="password">
 						<label for="password">Password</label>
-						<span class="helper-text" data-error="password needs at least 6 characters" ></span>
+						<span class="helper-text" data-error="password needs at least 6 characters"></span>
 					</div>
 				</div>
 				<div class="row">
@@ -119,10 +147,17 @@
 			<i class="fas fa-share-alt"></i>
 		</a>
 		<ul>
-			<li><a target="_blank" href="https://facebook.com" class="btn-floating blue darken-4 waves-effect waves-light"><i class="fab fa-facebook-square"></i></a></li>
-			<li><a target="_blank" href="https://aboutme.google.com/u/0/?referer=gplus" class="btn-floating red lighten-1 waves-effect waves-light"><i class="fab fa-google-plus-g"></i></a></li>
-			<li><a target="_blank" href="https://twitter.com" class="btn-floating light-blue darken-2 waves-effect waves-light"><i class="fab fa-twitter"></i></a></li>
-			<li><a target="_blank" href="https://github.com" class="btn-floating green lighten-2 waves-effect waves-light"><i class="fab fa-github"></i></a></li>
+			<li><a target="_blank" href="https://facebook.com"
+					class="btn-floating blue darken-4 waves-effect waves-light"><i
+						class="fab fa-facebook-square"></i></a></li>
+			<li><a target="_blank" href="https://aboutme.google.com/u/0/?referer=gplus"
+					class="btn-floating red lighten-1 waves-effect waves-light"><i class="fab fa-google-plus-g"></i></a>
+			</li>
+			<li><a target="_blank" href="https://twitter.com"
+					class="btn-floating light-blue darken-2 waves-effect waves-light"><i class="fab fa-twitter"></i></a>
+			</li>
+			<li><a target="_blank" href="https://github.com"
+					class="btn-floating green lighten-2 waves-effect waves-light"><i class="fab fa-github"></i></a></li>
 		</ul>
 	</div>
 
