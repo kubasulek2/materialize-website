@@ -6634,6 +6634,7 @@ nav {
     height: 42px; }
 
 /* ==================== ABOUT SECTION ========================== */
-section#about,
-section#solutions {
+section#about {
+  position: relative;
+  width: 100%;
   height: 100vh; }
