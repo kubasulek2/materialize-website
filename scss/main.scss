@@ -2,10 +2,9 @@
 
 /* ========================= VARIABLES ======================== */
 
-$light-text: color("grey", "lighten-4");
+$light-text: #f6f6f6;
 $grey-text-light: lighten(color("grey", "darken-2"), 5%);
 $grey-text-dark: darken(color("grey", "darken-2"), 5%);
-$accent: color("materialize-red", "lighten-1");
 
 /* ========================= GENERAL ======================== */
 
@@ -27,6 +26,12 @@ a {
 	font-size: 1.5rem;
 	height: initial;
 	border-radius: .2rem;
+}
+h3 {
+	margin-top: 2rem;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
 }
 
 /* ========================= HEADER ======================== */
@@ -83,6 +88,12 @@ nav {
 	color: $grey-text-light;
 
 	.logo {
+		h3 {
+			margin-top: 2rem;
+			font-size: 2.5rem;
+			text-transform: uppercase;
+			letter-spacing: .2rem;
+		}
 		display: flex;
 		justify-content: center;
 		padding: 60px 0;
@@ -103,9 +114,9 @@ nav {
 	li > a:hover {
 		background: rgba($primary-color-light, .3);
 	}
-	.login-container{
+	.login-container {
 		margin-top: 1rem;
-		padding: 0 32px
+		padding: 0 32px;
 	}
 }
 
@@ -150,8 +161,78 @@ nav {
 
 /* ==================== ABOUT SECTION ========================== */
 
-section#about{
+section#about {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	//height: 100vh;
+	//background: $light-text;
+}
+
+#about .carousel {
+	min-height: 500px !important;
+	@media (max-width: 400px) {
+		min-height: 600px !important;
+	}
+
+	.divider {
+		background: $accent;
+	}
+	p {
+		margin-top: 2rem;
+		color: $grey-text-light;
+	}
+	.indicator-item {
+		background: $accent;
+		&.active,
+		&:hover {
+			background: lighten($accent, 10%);
+		}
+	}
+	img {
+		margin-top: 3rem;
+		width: 90%;
+	}
+}
+/* ==================== FEATURES SECTION ========================== */
+
+section#features {
+	padding-top: 4rem;
+	background: $light-text;
+	
+	
+	h3 > span {
+		text-transform: initial;
+		color: $primary-color;
+	}
+
+
+
+	.tab-content{
+		padding-top: 3rem;
+		h5{color: $primary-color}
+		p{color: $grey-text-light}
+
+	}
+
+	.tabs{
+		margin-top: 3rem;
+		background: $light-text;
+		display: flex;
+		justify-content: center;
+	}
+	.card{
+		margin-top: 5rem;
+	}
+	.card i{
+		line-height: 40px
+	}
+	.card-action a{
+		color: $accent;
+	}
+	.card p{
+		color: $grey-text-light
+	}
+	.card-reveal p{
+		padding-top: 2rem;
+	}
 }

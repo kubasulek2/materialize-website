@@ -36,11 +36,13 @@
 
 $primary-color: color("blue", "accent-1") !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
-$primary-color-dark: darken($primary-color, 5%) !default;
+$primary-color-dark: darken($primary-color, 8%) !default;
+$accent: color("materialize-red", "lighten-1");
 
 $secondary-color: color("green", "lighten-1") !default;
-$success-color: color("green", "base") !default;
-$error-color: color("red", "base") !default;
+$secondary-color-light: lighten(color("green", "lighten-1"), 15% )!default;
+$success-color: $secondary-color !default;
+$error-color: $accent !default;
 $link-color: $primary-color-dark !default;
 
 
@@ -280,7 +282,7 @@ $spinner-default-color: $secondary-color !default;
 // ==========================================================================
 
 $tabs-underline-color: $primary-color-light !default;
-$tabs-text-color: $primary-color !default;
+$tabs-text-color: lighten(color("grey", "darken-2"), 5%) !default;
 $tabs-bg-color: #fff !default;
 
 
