@@ -6739,3 +6739,7 @@ section#solutions {
     color: #82B1FF; }
   section#solutions .card p {
     color: #6e6e6e; }
+
+section#clients .row {
+  margin-top: 4rem;
+  background: #f6f6f6; }
