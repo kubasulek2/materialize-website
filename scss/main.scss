@@ -257,6 +257,9 @@ section#features {
 	}
 }
 
+/* ==================== SOLUTIONS SECTION ========================== */
+
+
 section#solutions {
 	padding-top: 4rem;
 
@@ -306,6 +309,8 @@ section#solutions {
 		color: $grey-text-light;
 	}
 }
+
+/* ==================== SOLUTIONS SECTION ========================== */
 
 section#clients {
 	.row {
@@ -376,5 +381,23 @@ section#invitation {
 			height: 70%;
 			top: 15%;
 		}
+	}
+}
+
+/* ==================== CONTACT SECTION ========================== */
+
+.page-footer{
+	background: color("grey", "darken-1");
+	color: $light-text;
+	.footer-link{
+		padding-top: 1rem;
+	}
+	.footer-link a{
+		color: $light-text
+	}
+	i{
+		color: $primary-color;
+		font-size: 14.5px;
+		line-height: 1.5;
 	}
 }

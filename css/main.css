@@ -6715,6 +6715,7 @@ section#features {
   section#features .card-reveal p {
     padding-top: 2rem; }
 
+/* ==================== SOLUTIONS SECTION ========================== */
 section#solutions {
   padding-top: 4rem; }
   section#solutions .row > .s6 {
@@ -6752,6 +6753,7 @@ section#solutions {
   section#solutions .card p {
     color: #6e6e6e; }
 
+/* ==================== SOLUTIONS SECTION ========================== */
 section#clients .row {
   margin-top: 5rem; }
 
@@ -6802,3 +6804,16 @@ section#invitation {
       width: 130%;
       height: 70%;
       top: 15%; } }
+
+/* ==================== CONTACT SECTION ========================== */
+.page-footer {
+  background: #757575;
+  color: #f6f6f6; }
+  .page-footer .footer-link {
+    padding-top: 1rem; }
+  .page-footer .footer-link a {
+    color: #f6f6f6; }
+  .page-footer i {
+    color: #82B1FF;
+    font-size: 14.5px;
+    line-height: 1.5; }
