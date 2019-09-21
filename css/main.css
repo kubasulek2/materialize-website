@@ -6564,6 +6564,10 @@ h3 > span {
   text-transform: initial;
   color: #82B1FF; }
 
+.container-large {
+  width: 95%;
+  margin: 0 auto; }
+
 /* ========================= HEADER ======================== */
 .main-header {
   width: 100%;
@@ -6700,13 +6704,38 @@ section#features {
     padding-top: 2rem; }
 
 section#solutions {
-  width: 100%;
-  height: 80vh;
-  min-height: 500px;
-  position: relative;
-  background: url("../img/tree.jpg") center/cover; }
-  section#solutions .overlay {
-    padding-top: 4rem; }
+  padding-top: 4rem; }
+  section#solutions .row > .s6 {
+    margin-top: 4rem; }
+  section#solutions .col.hide-on-med-and-down {
+    margin-top: 6rem; }
+  section#solutions .collection {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+  section#solutions .collection-header {
+    background: #66BB6A;
+    color: #f6f6f6; }
   section#solutions .collection-item img {
     width: 50px;
-    margin-left: -20px; }
+    margin-left: -20px;
+    margin-right: 10px; }
+  section#solutions .collection-item div {
+    color: #6e6e6e;
+    font-size: 18px;
+    display: flex;
+    align-items: center; }
+  section#solutions .secondary-content {
+    display: block;
+    margin-left: auto;
+    color: #66BB6A; }
+  section#solutions .card {
+    cursor: pointer;
+    padding: 2rem; }
+  section#solutions div.card-header {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    color: #82B1FF; }
+  section#solutions .card p {
+    color: #6e6e6e; }
