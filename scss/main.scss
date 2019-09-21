@@ -46,9 +46,25 @@ h3 > span {
 	color: $primary-color;
 }
 
-.container-large{
+.container-large {
 	width: 95%;
 	margin: 0 auto;
+}
+
+.mobile {
+	display: none;
+}
+.desktop {
+	display: block;
+}
+
+@media (max-width: 1000px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
 }
 
 /* ========================= HEADER ======================== */
@@ -243,59 +259,122 @@ section#features {
 
 section#solutions {
 	padding-top: 4rem;
-	
-	
-	.row > .s6{
+
+	.row > .s6 {
 		margin-top: 4rem;
 	}
-	.col.hide-on-med-and-down{
+	.col.hide-on-med-and-down {
 		margin-top: 6rem;
 	}
-	.collection{
+	.collection {
 		max-width: 400px;
-		margin-left: auto; 
-		margin-right: auto; 
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.collection-header{
+	.collection-header {
 		background: $secondary-color;
 		color: $light-text;
 	}
 
-	.collection-item img{
+	.collection-item img {
 		width: 50px;
 		margin-left: -20px;
 		margin-right: 10px;
 	}
-	.collection-item div{
+	.collection-item div {
 		color: $grey-text-light;
 		font-size: 18px;
 		display: flex;
 		align-items: center;
 	}
-	.secondary-content{
+	.secondary-content {
 		display: block;
 		margin-left: auto;
 		color: $secondary-color;
 	}
-	.card{
+	.card {
 		cursor: pointer;
-		padding: 2rem
+		padding: 2rem;
 	}
-	div.card-header{
+	div.card-header {
 		font-size: 3rem;
 		text-align: center;
 		padding: 1rem;
 		color: $primary-color;
 	}
-	.card p{
+	.card p {
 		color: $grey-text-light;
 	}
-	
 }
 
-section#clients{
-	.row{
-		margin-top: 4rem;
-		background: $light-text;
+section#clients {
+	.row {
+		margin-top: 5rem;
+	}
+}
+
+section#invitation {
+	padding: 4rem;
+
+	.col {
+		position: relative;
+	}
+	img {
+		width: 100%;
+	}
+	.invitation-card {
+		padding: 2rem 0;
+		background: white;
+		text-align: center;
+
+		h5 {
+			margin-top: 1rem;
+			line-height: 1.5;
+			color: $primary-color-dark;
+		}
+		p {
+			color: $grey-text-light;
+			margin: 3rem 1rem 3rem 0;
+		}
+
+		.btn {
+			min-width: 250px;
+			margin-top: auto;
+			background: $accent;
+		}
+	}
+	@media (min-width: 1201px) {
+		.fixed {
+			position: absolute;
+			bottom: 2rem;
+			width: 100%;
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.invitation-card {
+			position: absolute;
+			width: 160%;
+			height: 90%;
+			z-index: 1;
+			left: 0;
+			top: 5%;
+			text-align: left;
+		}
+	}
+	@media (min-width: 1301px) {
+		.invitation-card {
+			width: 150%;
+			height: 80%;
+			top: 10%;
+		}
+	}
+	@media (min-width: 1500px) {
+		.invitation-card {
+			width: 130%;
+			height: 70%;
+			top: 15%;
+		}
 	}
 }
