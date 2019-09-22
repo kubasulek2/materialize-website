@@ -21,4 +21,18 @@ $(function () {
 		setTimeout(autoplay, 6500);
 	}
 	$('.tabs').tabs();
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 500) {
+			console.log('a');
+			$('.scroll-top').fadeIn();
+		} else {
+			$('.scroll-top').fadeOut();
+		}
+	});
+
+	$('.scroll-top').click(function(){
+		$('html, body').animate({ scrollTop: 0 }, 600);
+		return false;
+	});
 });

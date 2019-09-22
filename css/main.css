@@ -6580,6 +6580,20 @@ h3 > span {
   .desktop {
     display: none; } }
 
+.scroll-top {
+  display: none;
+  transition: all .5s;
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  .scroll-top i {
+    line-height: 40px;
+    font-size: 40px;
+    color: #f6f6f6; }
+
 /* ========================= HEADER ======================== */
 .main-header {
   width: 100%;
@@ -6817,3 +6831,19 @@ section#invitation {
     color: #82B1FF;
     font-size: 14.5px;
     line-height: 1.5; }
+  .page-footer .btn-flat {
+    margin-top: 2rem; }
+
+.footer-copyright .container-large {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.footer-copyright .logo {
+  font-size: 20px; }
+  .footer-copyright .logo i {
+    font-size: 20px; }
+
+.footer-copyright .copy-right {
+  margin-left: 1rem;
+  font-size: 13px; }
