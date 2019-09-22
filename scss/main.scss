@@ -443,11 +443,21 @@ section#invitation {
 
 
 #sign-up{
-	position: relative;
-	width: 100%;
-	min-height: 600px;
-	background: url(../img/tech.jpg) center/cover;
-	.row{
-		margin: 6rem 0;
+
+	p{
+		color: $grey-text-light;
+		margin-bottom: 2.5rem;
 	}
+	.row{
+		margin: 4rem 0;
+	}
+	.card-panel{
+		background: $light-text;
+	}
+}
+
+.btn-extend{
+	width: 100%;
+	display: block;
+	margin: 3rem 0;
 }

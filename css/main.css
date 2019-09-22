@@ -6849,10 +6849,17 @@ section#invitation {
   font-size: 13px; }
 
 /* ======================= SIGN UP ============================= */
-#sign-up {
-  position: relative;
+#sign-up p {
+  color: #6e6e6e;
+  margin-bottom: 2.5rem; }
+
+#sign-up .row {
+  margin: 4rem 0; }
+
+#sign-up .card-panel {
+  background: #f6f6f6; }
+
+.btn-extend {
   width: 100%;
-  min-height: 600px;
-  background: url(../img/tech.jpg) center/cover; }
-  #sign-up .row {
-    margin: 6rem 0; }
+  display: block;
+  margin: 3rem 0; }
