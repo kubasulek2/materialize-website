@@ -438,3 +438,16 @@ section#invitation {
 		//line-height: 35px
 	}
 }
+
+/* ======================= SIGN UP ============================= */
+
+
+#sign-up{
+	position: relative;
+	width: 100%;
+	min-height: 600px;
+	background: url(../img/tech.jpg) center/cover;
+	.row{
+		margin: 6rem 0;
+	}
+}

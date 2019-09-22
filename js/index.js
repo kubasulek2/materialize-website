@@ -24,7 +24,6 @@ $(function () {
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 500) {
-			console.log('a');
 			$('.scroll-top').fadeIn();
 		} else {
 			$('.scroll-top').fadeOut();
