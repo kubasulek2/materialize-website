@@ -567,6 +567,15 @@ body.admin {
 		.btn-floating.btn-large {
 			background: $accent;
 		}
+		.find-project{
+			background: $primary-color-dark;
+		}
+		.add-project{
+			background: $secondary-color;
+		}
+		.delete-project{
+			background: color("red", "base");
+		}
 	}
 	/* SideNav */
 	.sidenav-fixed {
@@ -594,7 +603,7 @@ body.admin {
 			position: relative;
 			height: 48px;
 		}
-		.input-wrap:hover{
+		.input-wrap:hover {
 			background: rgba($primary-color-light, .3);
 		}
 		input {
@@ -611,27 +620,25 @@ body.admin {
 		.input-wrap input:focus {
 			border-bottom: none;
 			box-shadow: none;
-			&::placeholder{
-				color: transparent
+			&::placeholder {
+				color: transparent;
 			}
 		}
-		input:focus + .btn{
+		input:focus + .btn {
 			display: inline-block;
 		}
-		input::placeholder{
+		input::placeholder {
 			font-size: 14px;
-			color: rgba(0, 0, 0, 0.87);;
+			color: rgba(0, 0, 0, 0.87);
 			opacity: 1;
 			font-weight: normal;
 			font-family: 'Open Sans' sans-serif;
-
 		}
 		.input-wrap i {
 			line-height: 48px;
 			color: $accent;
-			
 		}
-		.btn{
+		.btn {
 			display: none;
 			height: 32px;
 			padding: 4px;
@@ -640,7 +647,11 @@ body.admin {
 			line-height: 24px;
 			margin-top: 8px;
 			margin-left: -1px;
-			background: $grey-text-light;
+			background: $primary-color-light;
+		}
+
+		li:last-child {
+			margin-top: 3rem;
 		}
 	}
 }

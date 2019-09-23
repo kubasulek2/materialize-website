@@ -6933,6 +6933,12 @@ body.admin {
         margin-right: 0; }
     body.admin .nav-wrapper nav .btn-floating.btn-large {
       background: #EF5350; }
+    body.admin .nav-wrapper nav .find-project {
+      background: #5998ff; }
+    body.admin .nav-wrapper nav .add-project {
+      background: #66BB6A; }
+    body.admin .nav-wrapper nav .delete-project {
+      background: #F44336; }
   body.admin .sidenav-fixed {
     border-right: 1px solid #e0e0e0; }
     @media (max-width: 992px) {
@@ -6988,4 +6994,6 @@ body.admin {
       line-height: 24px;
       margin-top: 8px;
       margin-left: -1px;
-      background: #6e6e6e; }
+      background: #cfe1ff; }
+    body.admin .sidenav-fixed li:last-child {
+      margin-top: 3rem; }
