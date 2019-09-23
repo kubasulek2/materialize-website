@@ -526,6 +526,16 @@ body.admin {
 		.sidenav-trigger .material-icons {
 			font-size: 32px;
 		}
+
+		.brand-logo b{
+			line-height: 56px;
+		}
+
+		@media (max-width: 500px){
+			.brand-logo .material-icons {font-size: 56px;}
+		}
+
+
 		.admin-logo {
 			margin: auto;
 			color: $primary-color;
@@ -534,7 +544,7 @@ body.admin {
 		}
 		.fixed-action-btn{
 			position: absolute;
-			top: 73px;
+			top: 71px;
 			bottom: unset;
 
 			ul{
