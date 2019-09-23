@@ -78,7 +78,7 @@ h3 > span {
 	align-items: center;
 	cursor: pointer;
 
-	i {	
+	i {
 		line-height: 40px;
 		font-size: 40px;
 		color: $light-text;
@@ -442,22 +442,20 @@ section#invitation {
 
 /* ======================= SIGN UP ============================= */
 
-
-#sign-up{
-
-	p{
+#sign-up {
+	p {
 		color: $grey-text-light;
 		margin-bottom: 2.5rem;
 	}
-	.row{
+	.row {
 		margin: 4rem 0;
 	}
-	.card-panel{
+	.card-panel {
 		background: $light-text;
 	}
 }
 
-.btn-extend{
+.btn-extend {
 	width: 100%;
 	display: block;
 	margin: 3rem 0;
@@ -465,47 +463,42 @@ section#invitation {
 
 /* =======================  GENERAL MEDIA QUERIES ============================= */
 
-
-
-@media (max-width:600px){
-	.main-header{
+@media (max-width: 600px) {
+	.main-header {
 		height: 500px;
 	}
-	header .showcase .main-title{
+	header .showcase .main-title {
 		font-size: 3.5rem;
 	}
-	.showcase h4{
+	.showcase h4 {
 		font-size: 2rem;
 	}
 
-	#contact{
-		.footer-copyright{
+	#contact {
+		.footer-copyright {
 			font-size: 12px;
 		}
 		.logo {
-		font-size: 14px;
-		i {
 			font-size: 14px;
+			i {
+				font-size: 14px;
+			}
 		}
 	}
-	}
-
 }
 
-@media (max-width:1000px){
-	.main-header{
+@media (max-width: 1000px) {
+	.main-header {
 		height: 800px;
 	}
 }
 
-
 /* ===================== ADMIN PAGE ==========================*/
 
-body.admin{
-
+body.admin {
 	/* Header */
-	header{
-		@media (min-width:993px){
+	header {
+		@media (min-width: 993px) {
 			padding-left: 300px;
 		}
 	}
@@ -515,39 +508,56 @@ body.admin{
 		background: transparent;
 		border-bottom: 1px solid #e0e0e0;
 		height: 100px;
-		
-		@media (max-width:992px){
+
+		@media (max-width: 992px) {
 			background: $primary-color;
 			border-bottom-color: transparent;
 		}
 
-		.row{
+		.nav-content {
+			height: 100%;
+		}
+
+		.row {
 			display: flex;
 			height: 100%;
 			align-items: center;
 		}
-		.sidenav-trigger .material-icons{
+		.sidenav-trigger .material-icons {
 			font-size: 32px;
 		}
-		.admin-logo{
+		.admin-logo {
 			margin: auto;
 			color: $primary-color;
 			font-size: 40px;
 			letter-spacing: .27rem;
 		}
+		.fixed-action-btn{
+			position: absolute;
+			top: 73px;
+			bottom: unset;
 
-		ul{
-		margin-right: 0;
-	}
+			ul{
+				width: 165px
+			}
+
+			a.btn-floating{
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+		
+		.btn-floating.btn-large{
+			background: $accent
+		}
+	
 	}
 	/* SideNav */
-	.sidenav-fixed{
+	.sidenav-fixed {
 		border-right: 1px solid #e0e0e0;
 
-		@media (max-width:992px){
+		@media (max-width: 992px) {
 			border-right: none;
 		}
 	}
-	
-
 }

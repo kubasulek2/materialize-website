@@ -4521,7 +4521,7 @@ textarea.materialize-textarea {
   input[type=number]:not(.browser-default):focus.invalid ~ label,
   input[type=search]:not(.browser-default):focus.invalid ~ label,
   textarea.materialize-textarea:focus.invalid ~ label {
-    color: #ee6e73; }
+    color: #ea454b; }
   input:not([type]).validate + label,
   input[type=text]:not(.browser-default).validate + label,
   input[type=password]:not(.browser-default).validate + label,
@@ -4592,8 +4592,8 @@ input.invalid[type=search]:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown,
 .select-wrapper.invalid > input.select-dropdown:focus {
-  border-bottom: 1px solid #ee6e73;
-  box-shadow: 0 1px 0 0 #ee6e73; }
+  border-bottom: 1px solid #ea454b;
+  box-shadow: 0 1px 0 0 #ea454b; }
 
 input:not([type]).valid ~ .helper-text[data-success],
 input:not([type]):focus.valid ~ .helper-text[data-success],
@@ -4708,7 +4708,7 @@ input[type=search]:not(.browser-default):focus.invalid ~ .helper-text:after,
 textarea.materialize-textarea.invalid ~ .helper-text:after,
 textarea.materialize-textarea:focus.invalid ~ .helper-text:after, .select-wrapper.invalid ~ .helper-text:after {
   content: attr(data-error);
-  color: #ee6e73; }
+  color: #ea454b; }
 
 input:not([type]) + label:after,
 input[type=text]:not(.browser-default) + label:after,
@@ -6359,7 +6359,7 @@ input[type=range]::-ms-thumb {
   padding: 0 1rem; }
 
 .datepicker-clear {
-  color: #ee6e73; }
+  color: #ea454b; }
 
 /* Media Queries */
 @media only screen and (min-width: 601px) {
@@ -6501,7 +6501,7 @@ input[type=range]::-ms-thumb {
   justify-content: space-between; }
 
 .timepicker-clear {
-  color: #ee6e73; }
+  color: #ea454b; }
 
 .timepicker-close {
   color: #66BB6A; }
@@ -6665,7 +6665,7 @@ nav {
 
 /* ==================== FIXED ACTION BUTTON ========================== */
 .fixed-action-btn .btn-large {
-  background: #ee6e73; }
+  background: #ea454b; }
 
 /* ==================== LOGIN MODAL ========================== */
 #login-modal {
@@ -6691,14 +6691,14 @@ section#about {
     #about .carousel {
       min-height: 600px !important; } }
   #about .carousel .divider {
-    background: #ee6e73; }
+    background: #ea454b; }
   #about .carousel p {
     margin-top: 2rem;
     color: #6e6e6e; }
   #about .carousel .indicator-item {
-    background: #ee6e73; }
+    background: #ea454b; }
     #about .carousel .indicator-item.active, #about .carousel .indicator-item:hover {
-      background: #f39c9f; }
+      background: #ef7377; }
   #about .carousel img {
     margin-top: 3rem;
     width: 90%; }
@@ -6724,7 +6724,7 @@ section#features {
   section#features .card i {
     line-height: 40px; }
   section#features .card-action a {
-    color: #ee6e73; }
+    color: #ea454b; }
   section#features .card p {
     color: #6e6e6e; }
   section#features .card-reveal p {
@@ -6792,7 +6792,7 @@ section#invitation {
     section#invitation .invitation-card .btn, section#invitation .invitation-card .btn-large, section#invitation .invitation-card .btn-small {
       min-width: 250px;
       margin-top: auto;
-      background: #ee6e73; }
+      background: #ea454b; }
   @media (min-width: 1201px) {
     section#invitation .fixed {
       position: absolute;
@@ -6900,6 +6900,8 @@ body.admin {
       body.admin .nav-wrapper nav {
         background: #82B1FF;
         border-bottom-color: transparent; } }
+    body.admin .nav-wrapper nav .nav-content {
+      height: 100%; }
     body.admin .nav-wrapper nav .row {
       display: flex;
       height: 100%;
@@ -6911,8 +6913,17 @@ body.admin {
       color: #82B1FF;
       font-size: 40px;
       letter-spacing: .27rem; }
-    body.admin .nav-wrapper nav ul {
-      margin-right: 0; }
+    body.admin .nav-wrapper nav .fixed-action-btn {
+      position: absolute;
+      top: 73px;
+      bottom: unset; }
+      body.admin .nav-wrapper nav .fixed-action-btn ul {
+        width: 165px; }
+      body.admin .nav-wrapper nav .fixed-action-btn a.btn-floating {
+        margin-left: 0;
+        margin-right: 0; }
+    body.admin .nav-wrapper nav .btn-floating.btn-large {
+      background: #ea454b; }
   body.admin .sidenav-fixed {
     border-right: 1px solid #e0e0e0; }
     @media (max-width: 992px) {

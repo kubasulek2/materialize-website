@@ -5,7 +5,11 @@ $(function () {
 	/* CSS MATERIALIZE FEATURES INITIATION */
 
 	$('.sidenav').sidenav();
-	$('.fixed-action-btn').floatingActionButton({ hoverEnabled: false });
+	$('.website-fixed.fixed-action-btn').floatingActionButton({ hoverEnabled: false });
+	
+	$('.admin .fixed-action-btn').floatingActionButton({ direction: 'left', hoverEnabled: false });
+
+
 	$('.modal').modal();
 	$('.scrollspy').scrollSpy();
 	$('.slider').slider({
