@@ -33,15 +33,16 @@
 							<i class="material-icons left">cloud_upload</i>Cloud_Admin
 						</div>
 					</div>
-					<div class="website-fixed fixed-action-btn">
-						<a class="btn-floating btn-large">
-							<i class="large material-icons">settings</i>
+					<div class="fixed-action-btn">
+						<a class="btn-floating btn-large waves-effect waves-light">
+							<i class="fas fa-folder-open"></i>
 						</a>
 						<ul>
-							<li><a class="add-project btn-floating"><i class="material-icons">add</i></a></li>
+							<li><a class="add-project btn-floating"><i class="fas fa-folder-plus"></i></a></li>
 							<li><a href="#search-modal" class="btn-floating find-project modal-trigger"><i
 										class="material-icons">search</i></a></li>
-							<li><a class="btn-floating delete-project"><i class="material-icons">delete_forever</i></a></li>
+							<li><a href="#delete-modal" class="btn-floating delete-project modal-trigger"><i class="material-icons">delete_forever</i></a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -74,11 +75,14 @@
 				</div>
 
 			</li>
-			<li><a href="admin.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+			<li class="active"><a href="admin.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
 			<li><a href="admin-projects.html"><i class="material-icons">folder</i>Projects</a></li>
 			<li><a href="admin-stats.html"><i class="material-icons">assessment</i>Stats</a></li>
 			<li><a href="admin-profile.html"><i class="material-icons">account_box</i>Profile</a></li>
-			<div class="divider"></div>
+			<li>
+				<a href="admin-settings.html"><i class="material-icons">settings</i>Settings</a>
+				<div class="divider"></div>
+			</li>
 			<li>
 				<div class="login-container center">
 					<a href="index.html" class="btn-flat waves-effect waves-light white-text">Logout
@@ -90,7 +94,30 @@
 
 	</header>
 
-	<div class="modal" id="search-modal"></div>
+	<div class="modal center" id="search-modal">
+		<h4>Find Project</h4>
+		<form>
+			<div class="input-field">
+				<input type="text" id="search"><label for="search">Project Name</label>
+			</div>
+		</form>
+		<a href="" class="btn">Find</a>
+	</div>
+	<div class="modal center" id="delete-modal">
+		<h4>Delete Project</h4>
+		<form action="#">
+			<div class="file-field input-field">
+				<div class="btn">
+					<span>Folder</span>
+					<input type="file">
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text">
+				</div>
+			</div>
+		</form>
+		<a href="" class="btn">Delete</a>
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

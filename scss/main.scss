@@ -496,8 +496,9 @@ section#invitation {
 /* ===================== ADMIN PAGE ==========================*/
 
 body.admin {
-	/* Header */
-	header {
+	/* General */
+	header,
+	section {
 		@media (min-width: 993px) {
 			padding-left: 300px;
 		}
@@ -566,14 +567,18 @@ body.admin {
 
 		.btn-floating.btn-large {
 			background: $accent;
+			i {
+				font-size: 1.8rem;
+				width: 60px;
+			}
 		}
-		.find-project{
+		.find-project {
 			background: $primary-color-dark;
 		}
-		.add-project{
+		.add-project {
 			background: $secondary-color;
 		}
-		.delete-project{
+		.delete-project {
 			background: color("red", "base");
 		}
 	}
@@ -652,6 +657,27 @@ body.admin {
 
 		li:last-child {
 			margin-top: 3rem;
+		}
+	}
+
+	/* Modals */
+
+	#delete-modal,
+	#search-modal {
+		max-width: 400px;
+		padding: 2rem;
+		color: $grey-text-light;
+		h4 {
+			margin-bottom: 2rem;
+		}
+		.btn {
+			margin-top: 1rem;
+		}
+	}
+	#delete-modal {
+		
+		& > .btn {
+			background: $accent;
 		}
 	}
 }

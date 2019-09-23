@@ -6886,11 +6886,13 @@ section#invitation {
 
 /* ===================== ADMIN PAGE ==========================*/
 body.admin {
-  /* Header */
+  /* General */
   /* Navbar */
-  /* SideNav */ }
+  /* SideNav */
+  /* Modals */ }
   @media (min-width: 993px) {
-    body.admin header {
+    body.admin header,
+    body.admin section {
       padding-left: 300px; } }
   body.admin .nav-wrapper nav {
     background: transparent;
@@ -6933,6 +6935,9 @@ body.admin {
         margin-right: 0; }
     body.admin .nav-wrapper nav .btn-floating.btn-large {
       background: #EF5350; }
+      body.admin .nav-wrapper nav .btn-floating.btn-large i {
+        font-size: 1.8rem;
+        width: 60px; }
     body.admin .nav-wrapper nav .find-project {
       background: #5998ff; }
     body.admin .nav-wrapper nav .add-project {
@@ -6997,3 +7002,18 @@ body.admin {
       background: #cfe1ff; }
     body.admin .sidenav-fixed li:last-child {
       margin-top: 3rem; }
+  body.admin #delete-modal,
+  body.admin #search-modal {
+    max-width: 400px;
+    padding: 2rem;
+    color: #6e6e6e; }
+    body.admin #delete-modal h4,
+    body.admin #search-modal h4 {
+      margin-bottom: 2rem; }
+    body.admin #delete-modal .btn, body.admin #delete-modal .btn-large, body.admin #delete-modal .btn-small,
+    body.admin #search-modal .btn,
+    body.admin #search-modal .btn-large,
+    body.admin #search-modal .btn-small {
+      margin-top: 1rem; }
+  body.admin #delete-modal > .btn, body.admin #delete-modal > .btn-large, body.admin #delete-modal > .btn-small {
+    background: #EF5350; }
