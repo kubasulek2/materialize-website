@@ -6883,3 +6883,38 @@ section#invitation {
 @media (max-width: 1000px) {
   .main-header {
     height: 800px; } }
+
+/* ===================== ADMIN PAGE ==========================*/
+body.admin {
+  /* Header */
+  /* Navbar */
+  /* SideNav */ }
+  @media (min-width: 993px) {
+    body.admin header {
+      padding-left: 300px; } }
+  body.admin .nav-wrapper nav {
+    background: transparent;
+    border-bottom: 1px solid #e0e0e0;
+    height: 100px; }
+    @media (max-width: 992px) {
+      body.admin .nav-wrapper nav {
+        background: #82B1FF;
+        border-bottom-color: transparent; } }
+    body.admin .nav-wrapper nav .row {
+      display: flex;
+      height: 100%;
+      align-items: center; }
+    body.admin .nav-wrapper nav .sidenav-trigger .material-icons {
+      font-size: 32px; }
+    body.admin .nav-wrapper nav .admin-logo {
+      margin: auto;
+      color: #82B1FF;
+      font-size: 40px;
+      letter-spacing: .27rem; }
+    body.admin .nav-wrapper nav ul {
+      margin-right: 0; }
+  body.admin .sidenav-fixed {
+    border-right: 1px solid #e0e0e0; }
+    @media (max-width: 992px) {
+      body.admin .sidenav-fixed {
+        border-right: none; } }
