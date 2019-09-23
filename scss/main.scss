@@ -660,6 +660,32 @@ body.admin {
 		}
 	}
 
+	/* Stats */
+	#stats {
+		.row {
+			margin: 4rem 2rem;
+		}
+
+		.card-panel {
+			background: $light-text;
+			i {
+				color: $primary-color;
+			}
+			h5 {
+				font-size: 2.5rem;
+				color: $grey-text-light;
+			}
+			.progress{
+				background: #e0e0e0;
+			}
+			.determinate{
+				background: lighten($accent, 10%);
+			}
+		}
+		.even .card-panel i {
+			color: $secondary-color;
+		}
+	}
 	/* Modals */
 
 	#delete-modal,
@@ -675,9 +701,18 @@ body.admin {
 		}
 	}
 	#delete-modal {
-		
 		& > .btn {
 			background: $accent;
 		}
+	}
+
+	/* Preloader */
+
+	.preloader-outer-wrapper{
+		margin-top: 3rem;
+		padding-left: 300px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 }

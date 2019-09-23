@@ -6889,7 +6889,9 @@ body.admin {
   /* General */
   /* Navbar */
   /* SideNav */
-  /* Modals */ }
+  /* Stats */
+  /* Modals */
+  /* Preloader */ }
   @media (min-width: 993px) {
     body.admin header,
     body.admin section {
@@ -7002,6 +7004,21 @@ body.admin {
       background: #cfe1ff; }
     body.admin .sidenav-fixed li:last-child {
       margin-top: 3rem; }
+  body.admin #stats .row {
+    margin: 4rem 2rem; }
+  body.admin #stats .card-panel {
+    background: #f6f6f6; }
+    body.admin #stats .card-panel i {
+      color: #82B1FF; }
+    body.admin #stats .card-panel h5 {
+      font-size: 2.5rem;
+      color: #6e6e6e; }
+    body.admin #stats .card-panel .progress {
+      background: #e0e0e0; }
+    body.admin #stats .card-panel .determinate {
+      background: #f3817f; }
+  body.admin #stats .even .card-panel i {
+    color: #66BB6A; }
   body.admin #delete-modal,
   body.admin #search-modal {
     max-width: 400px;
@@ -7017,3 +7034,9 @@ body.admin {
       margin-top: 1rem; }
   body.admin #delete-modal > .btn, body.admin #delete-modal > .btn-large, body.admin #delete-modal > .btn-small {
     background: #EF5350; }
+  body.admin .preloader-outer-wrapper {
+    margin-top: 3rem;
+    padding-left: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
