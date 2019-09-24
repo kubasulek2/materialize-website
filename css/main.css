@@ -6890,6 +6890,7 @@ body.admin {
   /* Navbar */
   /* SideNav */
   /* Stats */
+  /* VISITORS SECTION */
   /* Modals */
   /* Preloader */ }
   @media (min-width: 993px) {
@@ -7019,6 +7020,10 @@ body.admin {
       background: #f3817f; }
   body.admin #stats .even .card-panel i {
     color: #66BB6A; }
+  body.admin section#visitors {
+    background: #f6f6f6; }
+    body.admin section#visitors #chartContainer {
+      color: #6e6e6e; }
   body.admin #delete-modal,
   body.admin #search-modal {
     max-width: 400px;
@@ -7036,7 +7041,9 @@ body.admin {
     background: #EF5350; }
   body.admin .preloader-outer-wrapper {
     margin-top: 3rem;
-    padding-left: 300px;
     width: 100%;
     display: flex;
     justify-content: center; }
+    @media (min-width: 993px) {
+      body.admin .preloader-outer-wrapper {
+        padding-left: 300px; } }
