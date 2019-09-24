@@ -89,6 +89,10 @@ $(function () {
 		});
 	}, 1000);
 
+	/* CK Editor */
 
+	$('body').attr('class').includes('projects') ?
+	CKEDITOR.replace('body') :
+	null ;
 
 });

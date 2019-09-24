@@ -7033,20 +7033,27 @@ body.admin {
         color: #6e6e6e;
         font-size: 12px; }
   body.admin #delete-modal,
-  body.admin #search-modal {
+  body.admin #search-modal,
+  body.admin #add-modal {
     max-width: 400px;
     padding: 2rem;
     color: #6e6e6e; }
     body.admin #delete-modal h4,
-    body.admin #search-modal h4 {
+    body.admin #search-modal h4,
+    body.admin #add-modal h4 {
       margin-bottom: 2rem; }
     body.admin #delete-modal .btn, body.admin #delete-modal .btn-large, body.admin #delete-modal .btn-small,
     body.admin #search-modal .btn,
     body.admin #search-modal .btn-large,
-    body.admin #search-modal .btn-small {
+    body.admin #search-modal .btn-small,
+    body.admin #add-modal .btn,
+    body.admin #add-modal .btn-large,
+    body.admin #add-modal .btn-small {
       margin-top: 1rem; }
   body.admin #delete-modal > .btn, body.admin #delete-modal > .btn-large, body.admin #delete-modal > .btn-small {
     background: #EF5350; }
+  body.admin #add-modal {
+    max-width: 800px; }
   body.admin #settings-modal {
     color: #545454; }
     body.admin #settings-modal .accent {

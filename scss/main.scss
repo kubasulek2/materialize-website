@@ -710,7 +710,8 @@ body.admin {
 	/* Modals */
 
 	#delete-modal,
-	#search-modal {
+	#search-modal,
+	#add-modal {
 		max-width: 400px;
 		padding: 2rem;
 		color: $grey-text-light;
@@ -725,6 +726,9 @@ body.admin {
 		& > .btn {
 			background: $accent;
 		}
+	}
+	#add-modal{
+		max-width: 800px;
 	}
 
 	#settings-modal {
