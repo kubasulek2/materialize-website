@@ -675,32 +675,40 @@ body.admin {
 				font-size: 2.5rem;
 				color: $grey-text-light;
 			}
-			.progress{
+			.progress {
 				background: #e0e0e0;
 			}
-			.determinate{
+			.determinate {
 				background: lighten($accent, 10%);
 			}
 		}
 		.even .card-panel i {
 			color: $secondary-color;
 		}
-
-		
 	}
 	/* VISITORS SECTION */
 
-		section#visitors{
-			background: $light-text;
-		
-			#chartContainer{
-				color: $grey-text-light;
-			}
+	section#visitors {
+		background: $light-text;
 
-			.collection{
-				color: $grey-text-dark
+		#chartContainer {
+			color: $grey-text-light;
+		}
+
+		.collection {
+			color: $grey-text-dark;
+			h5 {
+				color: $primary-color-dark;
+			}
+			.material-icons {
+				background: $accent;
+			}
+			p {
+				color: $grey-text-light;
+				font-size: 12px;
 			}
 		}
+	}
 
 	/* Modals */
 
@@ -724,7 +732,7 @@ body.admin {
 
 	/* Preloader */
 
-	.preloader-outer-wrapper{
+	.preloader-outer-wrapper {
 		margin-top: 3rem;
 		width: 100%;
 		display: flex;
@@ -734,5 +742,4 @@ body.admin {
 			padding-left: 300px;
 		}
 	}
-
 }

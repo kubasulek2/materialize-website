@@ -5,15 +5,15 @@ window.onload = function () {
 		theme: 'light2',
 		title: {
 			text: 'Total Traffic',
-			fontColor: '#4F81BC',
+			fontColor: '#5998ff',
 			fontFamily: 'Open Sans'
 		},
 		axisX: {
 			valueFormatString: 'MMM YY',
-			titleFontColor: '#4F81BC',
-			lineColor: '#4F81BC',
-			labelFontColor: '#4F81BC',
-			tickColor: '#4F81BC',
+			titleFontColor: '#5998ff',
+			lineColor: '#5998ff',
+			labelFontColor: '#5998ff',
+			tickColor: '#5998ff',
 			fontFamily: 'Open Sans',
 			crosshair: {
 				enabled: true,
@@ -22,10 +22,10 @@ window.onload = function () {
 		},
 		axisY: {
 			title: 'Number of Visits',
-			titleFontColor: '#4F81BC',
-			lineColor: '#4F81BC',
-			labelFontColor: '#4F81BC',
-			tickColor: '#4F81BC',
+			titleFontColor: '#5998ff',
+			lineColor: '#5998ff',
+			labelFontColor: '#5998ff',
+			tickColor: '#5998ff',
 			fontFamily: 'Open Sans',
 			crosshair: {
 				enabled: true
@@ -94,23 +94,23 @@ window.onload = function () {
 		animationEnabled: true,
 		title: {
 			text: 'Popular Projects',
-			fontColor: '#4F81BC',
+			fontColor: '#5998ff',
 			fontFamily: 'Open Sans'
 		},
 		axisY: {
 			title: 'Monthly Visitors',
-			titleFontColor: '#4F81BC',
-			lineColor: '#4F81BC',
-			labelFontColor: '#4F81BC',
-			tickColor: '#4F81BC',
+			titleFontColor: '#5998ff',
+			lineColor: '#5998ff',
+			labelFontColor: '#5998ff',
+			tickColor: '#5998ff',
 			fontFamily: 'Open Sans'
 		},
 		axisX: {
 			title: 'Projects',
-			titleFontColor: '#4F81BC',
-			lineColor: '#4F81BC',
-			labelFontColor: '#4F81BC',
-			tickColor: '#4F81BC',
+			titleFontColor: '#5998ff',
+			lineColor: '#5998ff',
+			labelFontColor: '#5998ff',
+			tickColor: '#5998ff',
 			fontFamily: 'Open Sans'
 		},
 		data: [ {

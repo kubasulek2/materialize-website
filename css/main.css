@@ -7026,6 +7026,13 @@ body.admin {
       color: #6e6e6e; }
     body.admin section#visitors .collection {
       color: #545454; }
+      body.admin section#visitors .collection h5 {
+        color: #5998ff; }
+      body.admin section#visitors .collection .material-icons {
+        background: #EF5350; }
+      body.admin section#visitors .collection p {
+        color: #6e6e6e;
+        font-size: 12px; }
   body.admin #delete-modal,
   body.admin #search-modal {
     max-width: 400px;
