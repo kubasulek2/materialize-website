@@ -4,10 +4,17 @@ window.onload = function () {
 		animationEnabled: true,
 		theme: 'light2',
 		title: {
-			text: 'Total Traffic'
+			text: 'Total Traffic',
+			fontColor: '#4F81BC',
+			fontFamily: 'Open Sans'
 		},
 		axisX: {
 			valueFormatString: 'MMM YY',
+			titleFontColor: '#4F81BC',
+			lineColor: '#4F81BC',
+			labelFontColor: '#4F81BC',
+			tickColor: '#4F81BC',
+			fontFamily: 'Open Sans',
 			crosshair: {
 				enabled: true,
 				snapToDataPoint: true
@@ -15,6 +22,11 @@ window.onload = function () {
 		},
 		axisY: {
 			title: 'Number of Visits',
+			titleFontColor: '#4F81BC',
+			lineColor: '#4F81BC',
+			labelFontColor: '#4F81BC',
+			tickColor: '#4F81BC',
+			fontFamily: 'Open Sans',
 			crosshair: {
 				enabled: true
 			}
@@ -78,38 +90,44 @@ window.onload = function () {
 
 	/* Top Chart */
 
-	var chartTop = new CanvasJS.Chart("chartContainerTop", {
+	var chartTop = new CanvasJS.Chart('chartContainerTop', {
 		animationEnabled: true,
-		theme: "light2", // "light1", "light2", "dark1", "dark2"
 		title: {
-			text: "Popular Projects"
+			text: 'Popular Projects',
+			fontColor: '#4F81BC',
+			fontFamily: 'Open Sans'
 		},
 		axisY: {
-			title: "Monthly Visitors",
-			includeZero: false
+			title: 'Monthly Visitors',
+			titleFontColor: '#4F81BC',
+			lineColor: '#4F81BC',
+			labelFontColor: '#4F81BC',
+			tickColor: '#4F81BC',
+			fontFamily: 'Open Sans'
 		},
 		axisX: {
-			title: "Projects"
+			title: 'Projects',
+			titleFontColor: '#4F81BC',
+			lineColor: '#4F81BC',
+			labelFontColor: '#4F81BC',
+			tickColor: '#4F81BC',
+			fontFamily: 'Open Sans'
 		},
 		data: [ {
-			type: "column",
-			yValueFormatString: "#,##0.0#\"%\"",
+			type: 'column',
+			name: 'Visitors',
+			color: '#66BB6A', 
+			yValueFormatString: '#.##',
 			dataPoints: [
-				{ label: "India", y: 7.1 },
-				{ label: "China", y: 6.70 },
-				{ label: "Indonesia", y: 5.00 },
-				{ label: "Australia", y: 2.50 },
-				{ label: "Mexico", y: 2.30 },
-				{ label: "UK", y: 1.80 },
-				{ label: "United States", y: 1.60 },
-				{ label: "Japan", y: 1.60 }
-
+				{ label: 'WeatherNow', y: 32000 },
+				{ label: 'Tool Box', y: 14000 },
+				{ label: 'MagicFridge', y: 8600 },
 			]
 		} ]
 	});
 	
 
-}
+
 
 	function toogleDataSeries (e) {
 	if (typeof (e.dataSeries.visible) === 'undefined' || e.dataSeries.visible) {

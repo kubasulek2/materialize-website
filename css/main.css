@@ -7024,6 +7024,8 @@ body.admin {
     background: #f6f6f6; }
     body.admin section#visitors #chartContainer {
       color: #6e6e6e; }
+    body.admin section#visitors .collection {
+      color: #545454; }
   body.admin #delete-modal,
   body.admin #search-modal {
     max-width: 400px;
