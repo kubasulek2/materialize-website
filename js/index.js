@@ -88,10 +88,12 @@ $(function () {
 	}, 1000);
 
 	/* CK Editor */
-
-	$('body').attr('class').includes('projects') ?
-	CKEDITOR.replace('body') :
-	null ;
+	if($('body').attr('class')){
+		$('body').attr('class').includes('projects') ?
+			CKEDITOR.replace('body') :
+			null;	
+	}
+	
 
 	/* Comments - Approve & Deny */
 
