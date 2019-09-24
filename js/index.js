@@ -1,6 +1,9 @@
 'use strict';
 
 $(function () {
+	/* HIDE SECTION */
+
+	$('.admin .section').hide();
 
 	/* CSS MATERIALIZE FEATURES INITIATION */
 
@@ -60,11 +63,6 @@ $(function () {
 	});
 
 	
-
-	/* HIDE SECTION */
-
-	$('.admin .section').hide();
-	
 	setTimeout(() => {
 
 		/* HIDE PRELOADER */
@@ -94,5 +92,42 @@ $(function () {
 	$('body').attr('class').includes('projects') ?
 	CKEDITOR.replace('body') :
 	null ;
+
+	/* Comments - Approve & Deny */
+
+	$('.approve').click(function (e) {
+		M.toast({html:'Request Approved',displayLength: 3000});
+		e.preventDefault();
+		$(this).parent().fadeOut(600);
+	});
+	$('.deny').click(function (e) {
+		M.toast({html:'Request Denied',displayLength: 3000});
+		e.preventDefault();
+		$(this).parent().fadeOut(600);
+	});
+
+	/* Quick Todos */
+	$('#todo-form').submit(function (e) {
+		e.preventDefault();
+		const output = `<li class="collection-item">
+                <div>${$('#todo').val() }
+                  <a href="#!" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a>
+                </div>
+              </li>`;
+
+		$('.todos').append(output);
+		M.toast({html:'Task Added',displayLength: 3000});
+	});
+
+	/* Delete Todos */
+
+	$('.todos').on('click', '.delete', function (e) {
+		$(this).parent().parent().remove();
+		M.toast({html:'Task Removed',displayLength: 3000});
+
+		e.preventDefault();
+	});
 
 });

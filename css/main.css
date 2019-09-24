@@ -6528,7 +6528,9 @@ input[type=range]::-ms-thumb {
 /* ========================= VARIABLES ======================== */
 /* ========================= GENERAL ======================== */
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  position: relative; }
 
 .bold {
   font-weight: 700; }
@@ -6891,11 +6893,12 @@ body.admin {
   /* SideNav */
   /* Stats */
   /* VISITORS SECTION */
+  /* Footer */
   /* Modals */
   /* Preloader */ }
   @media (min-width: 993px) {
     body.admin header,
-    body.admin section {
+    body.admin .section {
       padding-left: 300px; } }
   body.admin .nav-wrapper nav {
     background: transparent;
@@ -7032,6 +7035,14 @@ body.admin {
       body.admin section#visitors .collection p {
         color: #6e6e6e;
         font-size: 12px; }
+  body.admin footer {
+    background: #cfe1ff;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    body.admin footer p {
+      color: #6e6e6e;
+      margin: 0; }
   body.admin #delete-modal,
   body.admin #search-modal,
   body.admin #add-modal {

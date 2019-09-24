@@ -10,6 +10,8 @@ $grey-text-dark: darken(color("grey", "darken-2"), 5%);
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	min-height: 100vh;
+	position: relative;
 }
 .bold {
 	font-weight: 700;
@@ -498,7 +500,7 @@ section#invitation {
 body.admin {
 	/* General */
 	header,
-	section {
+	.section {
 		@media (min-width: 993px) {
 			padding-left: 300px;
 		}
@@ -707,6 +709,19 @@ body.admin {
 		}
 	}
 
+	/* Footer */
+	footer{
+		background: $primary-color-light;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		p{	
+			color: $grey-text-light;
+			margin: 0;
+		}
+
+	}
+
 	/* Modals */
 
 	#delete-modal,
@@ -818,5 +833,10 @@ body.projects{
 		.btn-large{
 			margin-right: 12px;
 		}
+	}
+}
+body.manager{
+	.card{
+		color: $grey-text-dark;
 	}
 }
