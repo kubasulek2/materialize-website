@@ -791,3 +791,32 @@ body.admin {
 		}
 	}
 }
+
+body.projects{
+	section.projects{
+		h3{ color: $grey-text-dark}
+	}
+
+	.collapsible{
+		h5{
+			width: 100%;
+			color: $grey-text-dark;
+		}
+	}
+	.collapsible-header .material-icons{
+		color: $primary-color;
+	}
+	.collapsible-header .chip i{margin-right: initial;color: $accent}
+	.collapsible-body{
+		padding: 0;
+		.card{
+			margin: 0;
+		}
+		.card-action{
+			padding: 8px 16px;
+		}
+		.btn-large{
+			margin-right: 12px;
+		}
+	}
+}

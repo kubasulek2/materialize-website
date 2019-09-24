@@ -7093,3 +7093,26 @@ body.admin {
     @media (min-width: 993px) {
       body.admin .preloader-outer-wrapper {
         padding-left: 300px; } }
+
+body.projects section.projects h3 {
+  color: #545454; }
+
+body.projects .collapsible h5 {
+  width: 100%;
+  color: #545454; }
+
+body.projects .collapsible-header .material-icons {
+  color: #82B1FF; }
+
+body.projects .collapsible-header .chip i {
+  margin-right: initial;
+  color: #EF5350; }
+
+body.projects .collapsible-body {
+  padding: 0; }
+  body.projects .collapsible-body .card {
+    margin: 0; }
+  body.projects .collapsible-body .card-action {
+    padding: 8px 16px; }
+  body.projects .collapsible-body .btn-large {
+    margin-right: 12px; }
