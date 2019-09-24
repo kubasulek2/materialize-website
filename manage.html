@@ -89,7 +89,8 @@
 					<div class="card">
 						<div class="card-content">
 							<span class="card-title">Error Logs</span>
-							<table class="striped">
+							<div class="divider"></div>
+							<table class="striped responsive-table">
 								<thead>
 									<tr>
 										<th>ID</th>
@@ -132,24 +133,76 @@
 					</div>
 				</div>
 				<div class="col s12 l6 xl4">
+				
+					<ul class="collection with-header latest-comments">
+						<li class="collection-header">
+							<h5>User Requests</h5>
+						</li>
+						<li class="collection-item avatar">
+							<img src="img/users/person4.jpg" alt="" class="circle">
+							<span class="title bold">johnSmith2</span>
+							<p class="truncate">Authorization</p>
+							<a href="" class="approve green-text">Approve</a> |
+							<a href="" class="deny red-text">Deny</a>
+						</li>
+						<li class="collection-item avatar">
+							<img src="img/users/person2.jpg" alt="" class="circle">
+							<span class="title bold">smartAlice</span>
+							<p class="truncate">Authorization</p>
+							<a href="" class="approve green-text">Approve</a> |
+							<a href="" class="deny red-text">Deny</a>
+						</li>
+						<li class="collection-item avatar">
+							<img src="img/users/person3.jpg" alt="" class="circle">
+							<span class="title bold">EllenWilliams</span>
+							<p class="truncate">Cancel Payment</p>
+							<a href="" class="approve green-text">Approve</a> |
+							<a href="" class="deny red-text">Deny</a>
+						</li>
+						<li class="collection-item avatar">
+							<img src="img/users/person1.jpg" alt="" class="circle">
+							<span class="title bold">buterfly21</span>
+							<p class="truncate">Authentication</p>
+							<a href="" class="approve green-text">Approve</a> |
+							<a href="" class="deny red-text">Deny</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 l6 xl4">
 					<div class="card">
 						<div class="card-content">
-							<span class="card-title">Quick Todos</span>
+							<span class="card-title">My Tasks</span>
 							<form id="todo-form">
 								<div class="input-field">
-									<input id="todo" type="text" placeholder="Add Todo...">
+									<input id="todo" type="text" placeholder="Add Task...">
 								</div>
 							</form>
 							<ul class="collection todos">
 								<li class="collection-item">
-									<div>Todo One
+									<div>Check DevOp err!!!
 										<a href="#!" class="secondary-content delete">
 											<i class="material-icons">close</i>
 										</a>
 									</div>
 								</li>
 								<li class="collection-item">
-									<div>Todo Two
+									<div>Last Month Payment
+										<a href="#!" class="secondary-content delete">
+											<i class="material-icons">close</i>
+										</a>
+									</div>
+								</li>
+								<li class="collection-item">
+									<div>Security Check
+										<a href="#!" class="secondary-content delete">
+											<i class="material-icons">close</i>
+										</a>
+									</div>
+								</li>
+								<li class="collection-item">
+									<div>Find CityMap search bug
 										<a href="#!" class="secondary-content delete">
 											<i class="material-icons">close</i>
 										</a>
@@ -159,42 +212,48 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col s12 m6 l4">
-					<!-- Latest Comments -->
-					<ul class="collection with-header latest-comments">
-						<li class="collection-header">
-							<h5>Latest Comments</h5>
-						</li>
-						<li class="collection-item avatar">
-							<img src="img/person1.jpg" alt="" class="circle">
-							<span class="title">John Doe</span>
-							<p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error
-								laboriosam autem ad beatae
-								explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore.</p>
-							<a href="" class="approve green-text">Approve</a> |
-							<a href="" class="deny red-text">Deny</a>
-						</li>
-						<li class="collection-item avatar">
-							<img src="img/person2.jpg" alt="" class="circle">
-							<span class="title">Steve Smith</span>
-							<p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error
-								laboriosam autem ad beatae
-								explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore.</p>
-							<a href="" class="approve green-text">Approve</a> |
-							<a href="" class="deny red-text">Deny</a>
-						</li>
-						<li class="collection-item avatar">
-							<img src="img/person3.jpg" alt="" class="circle">
-							<span class="title">Ellen Williams</span>
-							<p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima dolor error
-								laboriosam autem ad beatae
-								explicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore.</p>
-							<a href="" class="approve green-text">Approve</a> |
-							<a href="" class="deny red-text">Deny</a>
-						</li>
-					</ul>
+				<div class="col s12 l6 xl8">
+					<div class="card messages z-depth-0">
+						<div class="card-content">
+							<span class="card-title">Recent Messages</span>
+							<div class="divider"></div>
+							<table>
+								<thead>
+									<tr>
+										<th>From</th>
+										<th>Title</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Anica90</td>
+										<td>Help please</td>
+										<td class="right-align">
+											<a href="#!" class="btn-floating"><i class="material-icons ">bookmark</i></a>
+											<a href="#!" class="btn-floating delete"><i class="material-icons">delete</i></a>
+										</td>
+									</tr>
+									<tr>
+										<td>RichardM77</td>
+										<td>Magic Fridge password</td>
+										<td class="right-align">
+											<a href="#!" class="btn-floating"><i class="material-icons ">bookmark</i></a>
+											<a href="#!" class="btn-floating delete"><i class="material-icons">delete</i></a>
+										</td>
+									</tr>
+									<tr>
+										<td>bigturtrle11</td>
+										<td>Refund</td>
+										<td class="right-align">
+											<a href="#!" class="btn-floating"><i class="material-icons ">bookmark</i></a>
+											<a href="#!" class="btn-floating delete"><i class="material-icons">delete</i></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

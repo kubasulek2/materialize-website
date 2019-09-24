@@ -7127,3 +7127,32 @@ body.projects .collapsible-body {
     padding: 8px 16px; }
   body.projects .collapsible-body .btn-large {
     margin-right: 12px; }
+
+body.manager .card,
+body.manager .collection-header {
+  color: #545454; }
+
+body.manager th,
+body.manager tr,
+body.manager .collection-item {
+  color: #6e6e6e; }
+
+body.manager .todos .material-icons {
+  color: #EF5350; }
+
+body.manager table.striped > tbody > tr:nth-child(odd) {
+  background-color: rgba(130, 177, 255, 0.2); }
+
+body.manager .divider {
+  margin: 1.5rem 0; }
+
+body.manager .messages {
+  border: 1px solid #e0e0e0; }
+  body.manager .messages td {
+    cursor: pointer; }
+
+body.manager .messages .btn-floating {
+  margin-right: 10px;
+  margin-top: 5px; }
+  body.manager .messages .btn-floating.delete {
+    background: #EF5350; }

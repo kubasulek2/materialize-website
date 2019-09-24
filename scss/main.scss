@@ -710,16 +710,15 @@ body.admin {
 	}
 
 	/* Footer */
-	footer{
+	footer {
 		background: $primary-color-light;
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		p{	
+		p {
 			color: $grey-text-light;
 			margin: 0;
 		}
-
 	}
 
 	/* Modals */
@@ -742,7 +741,7 @@ body.admin {
 			background: $accent;
 		}
 	}
-	#add-modal{
+	#add-modal {
 		max-width: 800px;
 	}
 
@@ -767,26 +766,26 @@ body.admin {
 			}
 		}
 
-		ul{
+		ul {
 			margin-top: 4rem;
-			.collapsible-header{
+			.collapsible-header {
 				font-size: 1.3rem;
 				font-weight: bold;
-				.material-icons{
+				.material-icons {
 					color: $primary-color;
 				}
 			}
 		}
-		.collapsible-body{
+		.collapsible-body {
 			color: $grey-text-light;
-			.material-icons{
+			.material-icons {
 				color: $secondary-color;
 			}
-			.file-field{
-				.btn{
+			.file-field {
+				.btn {
 					padding: 0 20px;
 				}
-				.material-icons{
+				.material-icons {
 					color: white;
 				}
 			}
@@ -807,36 +806,71 @@ body.admin {
 	}
 }
 
-body.projects{
-	section.projects{
-		h3{ color: $grey-text-dark}
+body.projects {
+	section.projects {
+		h3 {
+			color: $grey-text-dark;
+		}
 	}
 
-	.collapsible{
-		h5{
+	.collapsible {
+		h5 {
 			width: 100%;
 			color: $grey-text-dark;
 		}
 	}
-	.collapsible-header .material-icons{
+	.collapsible-header .material-icons {
 		color: $primary-color;
 	}
-	.collapsible-header .chip i{margin-right: initial;color: $accent}
-	.collapsible-body{
+	.collapsible-header .chip i {
+		margin-right: initial;
+		color: $accent;
+	}
+	.collapsible-body {
 		padding: 0;
-		.card{
+		.card {
 			margin: 0;
 		}
-		.card-action{
+		.card-action {
 			padding: 8px 16px;
 		}
-		.btn-large{
+		.btn-large {
 			margin-right: 12px;
 		}
 	}
 }
-body.manager{
-	.card{
+body.manager {
+	.card,
+	.collection-header {
 		color: $grey-text-dark;
+	}
+	th,
+	tr,
+	.collection-item {
+		color: $grey-text-light;
+	}
+
+	.todos .material-icons {
+		color: $accent;
+	}
+	table.striped > tbody > tr:nth-child(odd) {
+		background-color: rgba(130, 177, 255, .2);
+	}
+	.divider{
+		margin: 1.5rem 0;
+	}
+
+	.messages{
+		border: 1px solid #e0e0e0;
+		td{cursor: pointer;}
+
+	}
+	.messages .btn-floating{
+		margin-right: 10px;
+		margin-top: 5px;
+		
+		&.delete{
+			background: $accent;
+		}
 	}
 }
