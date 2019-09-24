@@ -7021,9 +7021,8 @@ body.admin {
   body.admin #stats .even .card-panel i {
     color: #66BB6A; }
   body.admin section#visitors {
-    background: #f6f6f6; }
-    body.admin section#visitors #chartContainer {
-      color: #6e6e6e; }
+    background: #f6f6f6;
+    padding-top: 3rem; }
     body.admin section#visitors .collection {
       color: #545454; }
       body.admin section#visitors .collection h5 {
@@ -7048,6 +7047,37 @@ body.admin {
       margin-top: 1rem; }
   body.admin #delete-modal > .btn, body.admin #delete-modal > .btn-large, body.admin #delete-modal > .btn-small {
     background: #EF5350; }
+  body.admin #settings-modal {
+    color: #545454; }
+    body.admin #settings-modal .accent {
+      background: #EF5350; }
+    body.admin #settings-modal h4 {
+      display: flex;
+      letter-spacing: 0.22rem;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      margin-bottom: 2rem; }
+      body.admin #settings-modal h4 .material-icons {
+        display: block;
+        margin-left: 10px;
+        color: #82B1FF;
+        font-size: 36px; }
+    body.admin #settings-modal ul {
+      margin-top: 4rem; }
+      body.admin #settings-modal ul .collapsible-header {
+        font-size: 1.3rem;
+        font-weight: bold; }
+        body.admin #settings-modal ul .collapsible-header .material-icons {
+          color: #82B1FF; }
+    body.admin #settings-modal .collapsible-body {
+      color: #6e6e6e; }
+      body.admin #settings-modal .collapsible-body .material-icons {
+        color: #66BB6A; }
+      body.admin #settings-modal .collapsible-body .file-field .btn, body.admin #settings-modal .collapsible-body .file-field .btn-large, body.admin #settings-modal .collapsible-body .file-field .btn-small {
+        padding: 0 20px; }
+      body.admin #settings-modal .collapsible-body .file-field .material-icons {
+        color: white; }
   body.admin .preloader-outer-wrapper {
     margin-top: 3rem;
     width: 100%;

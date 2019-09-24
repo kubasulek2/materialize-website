@@ -28,6 +28,7 @@ $(function () {
 	}
 	$('.tabs').tabs();
 	$('select').formSelect();
+	$('.collapsible').collapsible();
 
 	/* SHOW OR HIDE SCROLL TO TOP BUTTON*/
 

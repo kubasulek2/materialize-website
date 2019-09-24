@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/waypoints.css">
+	<title>Document</title>
+</head>
+
+<body class="admin">
+	<!-- Header -->
+	<header class="sing-up-header scrollspy" id="home">
+
+		<!-- Navbar -->
+		<div class="nav-wrapper">
+			<nav class=" nav-extended z-depth-0 ">
+				<div class="nav-content">
+					<div class="row">
+						<a href="#!" class="brand-logo hide-on-large-only"><i
+								class="material-icons left">cloud_upload</i>
+							<b class="hide-on-small-and-down">Cloud_Admin</b></a>
+						<a href="#!" data-target="mobile-nav" class="sidenav-trigger">
+							<i class="material-icons">menu</i>
+						</a>
+						<div class="hide-on-med-and-down admin-logo bold">
+							<i class="material-icons left">cloud_upload</i>Cloud_Admin
+						</div>
+					</div>
+					<div class="fixed-action-btn">
+						<a class="btn-floating btn-large waves-effect waves-light">
+							<i class="fas fa-folder-open"></i>
+						</a>
+						<ul>
+							<li><a class="add-project btn-floating"><i class="fas fa-folder-plus"></i></a></li>
+							<li><a href="#search-modal" class="btn-floating find-project modal-trigger"><i
+										class="material-icons">search</i></a></li>
+							<li><a href="#delete-modal" class="btn-floating delete-project modal-trigger"><i
+										class="material-icons">delete_forever</i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- Sidenav -->
+		<ul class="sidenav sidenav-fixed z-depth-0" id="mobile-nav">
+			<li>
+				<div class="sidenav-header blue accent-1">
+					<div class="logo center">
+						<span><a href="index.html"><i class="material-icons left">cloud_done</i>CloudCom</a></span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="user-view center">
+					<div class="background"></div>
+					<img class="circle" src="img/admin/user.jpg">
+					<span class="name">John Doe</span>
+					<a href="#!">
+						<span class="email">jdoe@gmail.com</span>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="input-wrap">
+					<i class="material-icons left">search</i>
+					<input placeholder="Search" type="search">
+					<a href="#!" class="btn z-depth-0 waves-effect waves-light right">ok</a>
+				</div>
+
+			</li>
+			<li><a href="admin.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+			<li class="active"><a href="projects.html"><i class="material-icons">folder</i>Projects</a></li>
+			<li><a href="#!"><i class="material-icons">email</i>Inbox<span class="new badge pulse">16</span></a></li>
+			<li><a href="profile.html"><i class="material-icons">account_box</i>Profile</a></li>
+			<li>
+				<a href="#settings-modal" class="modal-trigger"><i class="material-icons">settings</i>Settings</a>
+				<div class="divider"></div>
+			</li>
+			<li>
+				<div class="login-container center">
+					<a href="index.html" class="btn-flat waves-effect waves-light white-text">Logout
+						<i class="material-icons right white-text">exit_to_app</i></a>
+				</div>
+			</li>
+
+		</ul>
+
+	</header>
+
+	
+
+	<div class="modal center" id="search-modal">
+		<h4>Find Project</h4>
+		<form>
+			<div class="input-field">
+				<input type="text" id="search"><label for="search">Project Name</label>
+			</div>
+		</form>
+		<a href="" class="btn">Find</a>
+	</div>
+	<div class="modal center" id="delete-modal">
+		<h3>Delete Project</h3>
+		<form action="#">
+			<div class="file-field input-field">
+				<div class="btn">
+					<span>Folder</span>
+					<input type="file">
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate" type="text">
+				</div>
+			</div>
+		</form>
+		<a href="" class="btn">Delete</a>
+	</div>
+
+	<div class="preloader-outer-wrapper">
+		<div class="preloader-wrapper big active">
+			<div class="spinner-layer spinner-blue-only">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div>
+				<div class="gap-patch">
+					<div class="circle"></div>
+				</div>
+				<div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"
+		integrity="sha256-CIc5A981wu9+q+hmFYYySmOvsA3IsoX+apaYlL0j6fg=" crossorigin="anonymous"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/chartJs/chart.js"></script>
+
+</body>
+
+</html>

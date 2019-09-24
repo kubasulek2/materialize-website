@@ -33,19 +33,6 @@
 							<i class="material-icons left">cloud_upload</i>Cloud_Admin
 						</div>
 					</div>
-					<div class="fixed-action-btn">
-						<a class="btn-floating btn-large waves-effect waves-light">
-							<i class="fas fa-folder-open"></i>
-						</a>
-						<ul>
-							<li><a class="add-project btn-floating"><i class="fas fa-folder-plus"></i></a></li>
-							<li><a href="#search-modal" class="btn-floating find-project modal-trigger"><i
-										class="material-icons">search</i></a></li>
-							<li><a href="#delete-modal" class="btn-floating delete-project modal-trigger"><i
-										class="material-icons">delete_forever</i></a>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</nav>
 		</div>
@@ -77,11 +64,11 @@
 
 			</li>
 			<li class="active"><a href="admin.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
-			<li><a href="admin-projects.html"><i class="material-icons">folder</i>Projects</a></li>
+			<li><a href="projects.html"><i class="material-icons">folder</i>Projects</a></li>
 			<li><a href="#!"><i class="material-icons">email</i>Inbox<span class="new badge pulse">16</span></a></li>
-			<li><a href="admin-profile.html"><i class="material-icons">account_box</i>Profile</a></li>
+			<li><a href="profile.html"><i class="material-icons">account_box</i>Profile</a></li>
 			<li>
-				<a href="admin-settings.html"><i class="material-icons">settings</i>Settings</a>
+				<a href="#settings-modal" class="modal-trigger"><i class="material-icons">settings</i>Settings</a>
 				<div class="divider"></div>
 			</li>
 			<li>
@@ -158,20 +145,22 @@
 				</div>
 			</div>
 			<div class="col s12 m6">
-				<div class="collection white with-header">
+				<div class="collection white with-header z-depth-1">
 					<ul>
-						<li class="collection-header"><h5 class="center">
-							Trending Projects
-						</h5></li>
+						<li class="collection-header">
+							<h5 class="center">
+								Trending Projects
+							</h5>
+						</li>
 						<li class="collection-item avatar">
 							<i class="material-icons circle">folder</i>
-							<span class="title">RestaurantFinder</span>
+							<span class="title">Restaurant Finder</span>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ad?</p>
 							<a href="#!" class="secondary-content"><span class="new badge">3200</span></a>
 						</li>
 						<li class="collection-item avatar">
 							<i class="material-icons circle">folder</i>
-							<span class="title">MagicFridge</span>
+							<span class="title">Magic Fridge</span>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, consectetur!</p>
 							<a href="#!" class="secondary-content"><span class="new badge">1700</span></a>
 						</li>
@@ -187,31 +176,76 @@
 		</div>
 	</section>
 
-	<div class="modal center" id="search-modal">
-		<h4>Find Project</h4>
-		<form>
-			<div class="input-field">
-				<input type="text" id="search"><label for="search">Project Name</label>
+	<div class="modal modal-fixed-footer" id="settings-modal">
+		<div class="modal-content">
+			<h4 class="center bold">Settings <i class="material-icons">settings</i></h4>
+			<div class="divider"></div>
+			<ul class="collapsible z-depth-0">
+				<li>
+					<div class="collapsible-header"><i class="material-icons">account_circle</i>Profile</div>
+					<div class="collapsible-body">
+						<from>
+							<div class="input-field">
+								<i class="material-icons prefix">account_box</i>
+								<input type="text" id="name" value="John Doe">
+								<label for="name">User Name</label>
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">email</i>
+								<input type="text" id="email" value="jdoe@gmail.com">
+								<label for="email">Email Address</label>
+							</div>
+							<p>Gender:</p>
+							<p>
+								<label>
+									<input name="group1" type="radio" checked />
+									<span>Male</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input name="group1" type="radio" />
+									<span>Female</span>
+								</label>
+							</p>
+							<div class="file-field input-field">
+								<div class="btn">
+									<span><i class="material-icons">add_a_photo</i></span>
+									<input type="file">
+								</div>
+								<div class="file-path-wrapper">
+									<input class="file-path validate" type="text" value="profile.jpg">
+								</div>
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">contact_phone</i>
+								<input type="text" value="+48 800 800 800">
+								<label for="">Phone Number</label>
+							</div>
+						</from>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="material-icons">folder_shared</i>Projects</div>
+					<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="material-icons">security</i>Security</div>
+					<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+				</li>
+				<li>
+					<div class="collapsible-header"><i class="material-icons">settings_applications</i>Other</div>
+					<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+				</li>
 			</div>
-		</form>
-		<a href="" class="btn">Find</a>
+		</ul>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat">Apply</a>
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat accent">Cancel</a>
+		</div>
 	</div>
-	<div class="modal center" id="delete-modal">
-		<h4>Delete Project</h4>
-		<form action="#">
-			<div class="file-field input-field">
-				<div class="btn">
-					<span>Folder</span>
-					<input type="file">
-				</div>
-				<div class="file-path-wrapper">
-					<input class="file-path validate" type="text">
-				</div>
-			</div>
-		</form>
-		<a href="" class="btn">Delete</a>
 	</div>
-	
+
 	<div class="preloader-outer-wrapper">
 		<div class="preloader-wrapper big active">
 			<div class="spinner-layer spinner-blue-only">

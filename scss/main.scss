@@ -690,10 +690,7 @@ body.admin {
 
 	section#visitors {
 		background: $light-text;
-
-		#chartContainer {
-			color: $grey-text-light;
-		}
+		padding-top: 3rem;
 
 		.collection {
 			color: $grey-text-dark;
@@ -727,6 +724,53 @@ body.admin {
 	#delete-modal {
 		& > .btn {
 			background: $accent;
+		}
+	}
+
+	#settings-modal {
+		color: $grey-text-dark;
+		.accent {
+			background: $accent;
+		}
+		h4 {
+			display: flex;
+			letter-spacing: 0.22rem;
+			justify-content: center;
+			align-items: center;
+			text-transform: uppercase;
+			margin-bottom: 2rem;
+
+			.material-icons {
+				display: block;
+				margin-left: 10px;
+				color: $primary-color;
+				font-size: 36px;
+			}
+		}
+
+		ul{
+			margin-top: 4rem;
+			.collapsible-header{
+				font-size: 1.3rem;
+				font-weight: bold;
+				.material-icons{
+					color: $primary-color;
+				}
+			}
+		}
+		.collapsible-body{
+			color: $grey-text-light;
+			.material-icons{
+				color: $secondary-color;
+			}
+			.file-field{
+				.btn{
+					padding: 0 20px;
+				}
+				.material-icons{
+					color: white;
+				}
+			}
 		}
 	}
 
